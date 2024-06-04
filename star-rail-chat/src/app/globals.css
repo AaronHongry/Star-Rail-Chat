@@ -50,6 +50,23 @@ body {
   font-weight: medium;
 }
 
-body {
-  font-family: 'CustomFontName', sans-serif;
+@font-face {
+  font-family: 'SDK-SC';
+  src: url('/fonts/zh-cn.ttf') format('truetype');
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.chat-background {
+  background-color: #d9d8d7;
+}
+
+.chat-main-text {
+  color: #121212;
+}
+
+.chat-sub-text {
+  color: #6a6968;
 }
