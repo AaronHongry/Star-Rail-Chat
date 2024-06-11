@@ -60,7 +60,7 @@ body {
 }
 
 .chat-background {
-  background-color: rgb(217, 216, 215);
+  background-color: #d9d8d7;
 }
 
 .chat-main-text {
@@ -117,4 +117,16 @@ body {
 .send-message {
   border: 1px solid #aeafaf;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.icon-background {
+  background-color: #3a3a3a;
+}
+
+.text-background {
+  background-color: #ededed;
+}
+
+.opp-box-shadow {
+  box-shadow: -1px 2px #a1a0a0;
 }

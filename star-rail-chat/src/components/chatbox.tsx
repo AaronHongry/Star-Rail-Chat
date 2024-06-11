@@ -1,4 +1,13 @@
+"use client";
+
+import { useState } from "react";
+import OppMessage from "./oppMessage";
+
 function Chatbox() {
+
+    const [myMessages, setMyMessages] = useState();
+    const [oppMessages, setOppMessages] = useState();
+
     return (
         <div className="m-20 w-1/3 flex flex-col items-center chat-box-shadow">
             <div style={{
@@ -9,8 +18,10 @@ function Chatbox() {
                     <input className="chat-sub-text chat-background font-bold text-sm ml-3 w-4/5 focus:outline-none" placeholder="Enter Description of Chat"></input>
                 </div>
                 <div className="separator-top w-full mb-2 chat-in-shadow-down z-20"></div>
-                <div className="flex flex-col items-center py-4 z-10">
-                    <h1 className="chat-sub-text text-sm py-10">There are no chats!</h1>
+                <div className="flex flex-col items-center py-1 z-10 gap-6">
+                    <OppMessage name="Dr. Ratio" message="hello hello hello hello hello hello hello hello"/>
+                    <OppMessage name="Dr. Ratio" message="y=mx+b lemme get yo number"/>
+                    <h1 className="chat-sub-text text-sm py-10"></h1>
                 </div>
                 <div className="separator-bottom w-full mt-2 chat-in-shadow-up z-20"></div>
                 <div className="flex flex-col items-center w-full chat-entry-background py-5 pb-16">
